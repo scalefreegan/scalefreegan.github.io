@@ -4,12 +4,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Aaron Brooks — AI × Bio</title>
-<meta name="description" content="Aaron Brooks — scientific leader building AI-native tools that transform and accelerate science. Synthetic biology, genomics, and agentic AI." />
+<meta name="description" content="Aaron Brooks — scientific leader building AI-native tools that transform and accelerate the life sciences. Synthetic biology, genomics, and agentic AI." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/style.css?v=2" />
 </head>
 <body>
 
@@ -34,7 +34,7 @@
     <img class="hero-avatar" src="assets/img/avatar.png" alt="Portrait of Aaron Brooks" />
     <p class="hero-kicker">$ whoami<span class="blink">_</span></p>
     <h1>Aaron Brooks, Ph.D.</h1>
-    <p class="role">Scientific leader building <strong>AI-native tools</strong> that transform and accelerate science — working at the intersection of synthetic biology, genomics, and agentic AI.</p>
+    <p class="role">Scientific leader building <strong>AI-native tools</strong> that transform and accelerate the life sciences — working at the intersection of synthetic biology, genomics, and agentic AI.</p>
     <div class="hero-links">
       <a href="https://github.com/scalefreegan" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/aaron-n-brooks/" target="_blank" rel="noopener">LinkedIn</a>
@@ -48,26 +48,21 @@
 
   <section id="vision">
     <p class="cmd">cat <b>vision.md</b></p>
-    <div class="vision-block"><span class="tag"># vision</span>
-
-I think the next genome won't just be evolved — it'll be designed.
-
-I started my career modeling how regulatory genomes work, then spent years
-helping hand-build pieces of synthetic ones: a redesigned tRNA neochromosome,
-debugged synthetic yeast chromosomes, base by base, alongside the Steinmetz,
-Boeke, and Cai labs. That work convinced me of two things — genome design is
-still painfully slow, and most of what makes it slow is now within reach of AI.
-
-Everything I build now is aimed at closing that gap: agentic systems that can
-propose, simulate, and test biological designs fast enough that <em>"build a
-genome from scratch"</em> stops being a moonshot and starts being a roadmap.</div>
+    <div class="vision-block">
+      <p class="vision-tag"># vision</p>
+      <p class="headline">In the future, we won't just evolve genomes. We'll design them.</p>
+      <p>I started my career modeling how regulatory genomes work, then spent years helping build synthetic ones: a tRNA neochromosome and debugged synthetic yeast chromosomes, alongside the Steinmetz, Boeke, and Cai labs.</p>
+      <p>That work taught me that genome design is still slow, imprecise, and unpredictable. Genomes are massively complex, evolved systems. They don't reduce to tidy first principles; they carry the convoluted logic of their evolutionary history, more than anyone can hold in their head. With AI, we can finally begin to understand them at that scale.</p>
+      <p>I firmly believe models alone won't get us there. Because these systems are evolved, reasoning only goes so far, and designs have to be tested. Progress in biology with AI depends on tight lab-in-the-loop integration: fast design–build–test–learn (DBTL) cycles, where every experiment sharpens the next design.</p>
+      <p>That's what I'm building toward: agentic systems that design, simulate, and test biology fast enough that building a genome from scratch stops being a moonshot and starts becoming a roadmap.</p>
+    </div>
   </section>
 
   <section id="about">
     <p class="cmd">cat <b>about.md</b></p>
     <div class="prose">
       <p class="lede">I'm a scientist-turned-engineer working at the intersection of synthetic biology, genomics, and agentic AI.</p>
-      <p>After a Ph.D. in systems biology at the University of Washington and five years at EMBL unpacking how genomes are organized and regulated, I moved into industry to build the computational tools that make biological design faster — first statistical and machine-learning models at Inscripta and Ginkgo Bioworks, and now AI agents at Generate Biomedicines. I'm based in Albuquerque, NM, and work remotely with teams in Boston.</p>
+      <p>After a Ph.D. in systems biology at the University of Washington and five years at EMBL unpacking how genomes are organized and regulated, I moved into industry to build the computational tools that make biological design faster — first statistical and machine-learning models at Inscripta and Ginkgo Bioworks, and now AI agents at Generate Biomedicines. I'm based in Albuquerque, NM, and work remotely with teams around the world.</p>
     </div>
   </section>
 
@@ -151,41 +146,41 @@ genome from scratch"</em> stops being a moonshot and starts being a roadmap.</di
     <p class="lede">A handful of AI-native apps I've built for myself, end to end — mostly local-first, each with a small embedded AI agent doing real work.</p>
     <div class="project-grid">
 
-      <div class="card">
-        <p class="card-title"><a href="https://github.com/scalefreegan/lean-into-it" target="_blank" rel="noopener">Lean Into It</a><span class="card-arrow">↗</span></p>
+      <a class="card" href="https://github.com/scalefreegan/lean-into-it" target="_blank" rel="noopener">
+        <p class="card-title"><span>Lean Into It</span><span class="card-arrow" aria-hidden="true">↗</span></p>
         <p>Learn mathematical proof and formal verification with Lean 4 — hypotheses appear as cards, and every move writes a real line of Lean.</p>
         <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Lean 4</span></div>
-      </div>
+      </a>
 
-      <div class="card">
-        <p class="card-title"><a href="https://github.com/scalefreegan/fret-not" target="_blank" rel="noopener">Fret Not</a><span class="card-arrow">↗</span></p>
+      <a class="card" href="https://github.com/scalefreegan/fret-not" target="_blank" rel="noopener">
+        <p class="card-title"><span>Fret Not</span><span class="card-arrow" aria-hidden="true">↗</span></p>
         <p>A visual app for learning music theory on piano and guitar — the same note stays in sync across staff, keyboard, fretboard, and tab.</p>
         <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span></div>
-      </div>
+      </a>
 
-      <div class="card">
-        <p class="card-title"><a href="https://github.com/scalefreegan/lingo-dojo" target="_blank" rel="noopener">Lingo Dojo</a><span class="card-arrow">↗</span></p>
+      <a class="card" href="https://github.com/scalefreegan/lingo-dojo" target="_blank" rel="noopener">
+        <p class="card-title"><span>Lingo Dojo</span><span class="card-arrow" aria-hidden="true">↗</span></p>
         <p>Composable prompt packs for spoken language practice, with an in-app voice "dojo master" for live conversation drills.</p>
         <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Voice AI</span></div>
-      </div>
+      </a>
 
-      <div class="card">
-        <p class="card-title"><a href="https://github.com/scalefreegan/new-eleusis" target="_blank" rel="noopener">New Eleusis</a><span class="card-arrow">↗</span></p>
+      <a class="card" href="https://github.com/scalefreegan/new-eleusis" target="_blank" rel="noopener">
+        <p class="card-title"><span>New Eleusis</span><span class="card-arrow" aria-hidden="true">↗</span></p>
         <p>A digital version of the card game that turns the scientific method into play — an AI or human invents a secret rule, the table deduces it.</p>
         <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Capacitor</span></div>
-      </div>
+      </a>
 
-      <div class="card">
-        <p class="card-title"><a href="https://github.com/scalefreegan/jev-ants" target="_blank" rel="noopener">Jev Ants</a><span class="card-arrow">↗</span></p>
+      <a class="card" href="https://github.com/scalefreegan/jev-ants" target="_blank" rel="noopener">
+        <p class="card-title"><span>Jev Ants</span><span class="card-arrow" aria-hidden="true">↗</span></p>
         <p>~1,000 ants form a typed word or an uploaded image — each ant is its own independent agent deciding how to move.</p>
         <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Agents</span></div>
-      </div>
+      </a>
 
-      <div class="card">
-        <p class="card-title"><a href="https://github.com/scalefreegan/trail-train" target="_blank" rel="noopener">Basecamp</a><span class="card-arrow">↗</span></p>
+      <a class="card" href="https://github.com/scalefreegan/trail-train" target="_blank" rel="noopener">
+        <p class="card-title"><span>Basecamp</span><span class="card-arrow" aria-hidden="true">↗</span></p>
         <p>A local ultra-running dashboard: Strava, Oura, and calendar data plotted against a race plan, with a headless Claude Code coach.</p>
         <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Claude Code</span></div>
-      </div>
+      </a>
 
     </div>
     <p class="more-repos">Also on GitHub — agentic dev tooling: <a href="https://github.com/scalefreegan/agent-skills" target="_blank" rel="noopener">agent-skills</a>, <a href="https://github.com/scalefreegan/agent-learn" target="_blank" rel="noopener">agent-learn</a>, <a href="https://github.com/scalefreegan/agent-trade" target="_blank" rel="noopener">agent-trade</a>, <a href="https://github.com/scalefreegan/hybrid-rag" target="_blank" rel="noopener">pointy-rag</a> →</p>
@@ -250,11 +245,10 @@ genome from scratch"</em> stops being a moonshot and starts being a roadmap.</di
 
   <section id="contact">
     <p class="cmd">cat <b>contact.txt</b></p>
-    <p class="lede">Always glad to talk agentic AI, genome engineering, or where they're headed together.</p>
+    <p class="lede">Always glad to talk agentic AI, genome engineering, or where they're headed together. The best way to reach me is a message on LinkedIn.</p>
     <div class="contact-row">
-      <a href="mailto:aaron.neil.brooks@gmail.com">Email</a>
+      <a class="primary" href="https://www.linkedin.com/in/aaron-n-brooks/" target="_blank" rel="noopener">Message me on LinkedIn</a>
       <a href="https://github.com/scalefreegan" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/aaron-n-brooks/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=HGq2_yEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
       <a href="assets/resume.pdf" target="_blank" rel="noopener">Résumé</a>
     </div>
@@ -263,10 +257,10 @@ genome from scratch"</em> stops being a moonshot and starts being a roadmap.</di
 </main>
 
 <footer>
-  <p>Built with React, canvas, and an unreasonable number of nucleotide puns. © <span id="year"></span> Aaron Brooks.</p>
+  <p>Created with the assistance of Anthropic's Claude Code (Claude Fable 5.2). © <span id="year"></span> Aaron Brooks.</p>
 </footer>
 
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-<script type="module" src="assets/js/dna-hero.js"></script>
+<script type="module" src="assets/js/dna-hero.js?v=2"></script>
 </body>
 </html>

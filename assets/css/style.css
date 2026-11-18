@@ -85,6 +85,11 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   overflow: hidden;
   border-bottom: 1px solid var(--border);
   background: radial-gradient(ellipse at top, #0f1813, var(--bg) 70%);
+  /* bottom padding reserves the band where the helix assembles */
+  padding: 64px 0 210px;
+}
+@media (max-width: 639px) {
+  .hero { padding: 48px 0 178px; }
 }
 #dna-root { position: absolute; inset: 0; }
 #dna-canvas {
@@ -97,7 +102,13 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .hero-scrim {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10,13,11,0.35) 0%, rgba(10,13,11,0.55) 55%, rgba(10,13,11,0.92) 100%);
+  /* dims the falling nucleotides behind the text, clears over the helix band */
+  background: linear-gradient(
+    180deg,
+    rgba(10, 13, 11, 0.5) 0,
+    rgba(10, 13, 11, 0.5) calc(100% - 250px),
+    rgba(10, 13, 11, 0) calc(100% - 185px)
+  );
   pointer-events: none;
 }
 .hero-content {
@@ -150,11 +161,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 .hero-links a:hover { border-color: var(--green); color: var(--green-bright); text-decoration: none; }
 
-@media (prefers-reduced-motion: reduce) {
-  #dna-canvas { display: none; }
-  .hero { background: radial-gradient(ellipse at top, #121a15, var(--bg) 70%); }
-}
-
 /* ---------- sections ---------- */
 section { padding: 72px 0; border-bottom: 1px solid var(--border); }
 section:last-of-type { border-bottom: none; }
@@ -185,12 +191,18 @@ section:last-of-type { border-bottom: none; }
   border-left: 3px solid var(--green);
   border-radius: 6px;
   padding: 26px 28px;
-  font-size: 16px;
+  font-size: 15.5px;
   line-height: 1.75;
   color: #e4f3ee;
-  white-space: pre-wrap;
 }
-.vision-block .tag { color: var(--green); }
+.vision-block p { margin: 0 0 18px; max-width: 74ch; }
+.vision-block p:last-child { margin-bottom: 0; }
+.vision-block .vision-tag { color: var(--green); }
+.vision-block .headline { font-size: 18px; font-weight: 600; color: #f3f5f3; }
+@media (max-width: 639px) {
+  .vision-block { padding: 20px 18px; font-size: 14.5px; }
+  .vision-block .headline { font-size: 16.5px; }
+}
 
 /* about / now */
 .prose p { margin: 0 0 16px; color: var(--text); max-width: 680px; }
@@ -249,7 +261,10 @@ section:last-of-type { border-bottom: none; }
   padding: 20px;
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
-.card:hover { border-color: var(--green); transform: translateY(-2px); }
+/* the whole card is one link out to the repo */
+a.card { display: block; color: inherit; text-decoration: none; }
+a.card:hover { border-color: var(--green); transform: translateY(-2px); text-decoration: none; }
+a.card:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
 .card-title {
   font-family: var(--mono);
   font-size: 15px;
@@ -260,9 +275,9 @@ section:last-of-type { border-bottom: none; }
   justify-content: space-between;
   gap: 8px;
 }
-.card-title a { color: inherit; }
-.card-title a:hover { color: var(--green-bright); }
+a.card:hover .card-title { color: var(--green-bright); }
 .card-arrow { color: var(--text-faint); font-size: 13px; }
+a.card:hover .card-arrow { color: var(--green); }
 .card p { margin: 0 0 12px; color: var(--text-dim); font-size: 14.5px; line-height: 1.55; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .tag {
@@ -329,6 +344,8 @@ section:last-of-type { border-bottom: none; }
   background: var(--bg-raised);
 }
 .contact-row a:hover { border-color: var(--green); color: var(--green-bright); text-decoration: none; }
+.contact-row a.primary { border-color: var(--green); color: var(--green-bright); }
+.contact-row a.primary:hover { background: rgba(94, 234, 212, 0.1); }
 
 footer {
   padding: 32px 0 48px;
