@@ -1,12 +1,272 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <!-- HTML meta refresh URL redirection -->
-   <meta http-equiv="refresh"
-   content="0; url=http://aaronbrooks.info">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aaron Brooks — AI × Bio</title>
+<meta name="description" content="Aaron Brooks — scientific leader building AI-native tools that transform and accelerate science. Synthetic biology, genomics, and agentic AI." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-   <p>Please go to: 
-   <a href="http://aaronbrooks.info">this page</a></p>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top">aaron<span class="dot">.</span>brooks</a>
+    <div class="nav-links">
+      <a href="#vision">vision</a>
+      <a href="#now">now</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#science">science</a>
+      <a href="#contact">contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div id="dna-root"><canvas id="dna-canvas" aria-hidden="true"></canvas></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-content">
+    <img class="hero-avatar" src="assets/img/avatar.png" alt="Portrait of Aaron Brooks" />
+    <p class="hero-kicker">$ whoami<span class="blink">_</span></p>
+    <h1>Aaron Brooks, Ph.D.</h1>
+    <p class="role">Scientific leader building <strong>AI-native tools</strong> that transform and accelerate science — working at the intersection of synthetic biology, genomics, and agentic AI.</p>
+    <div class="hero-links">
+      <a href="https://github.com/scalefreegan" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/aaron-n-brooks/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=HGq2_yEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="assets/resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="vision">
+    <p class="cmd">cat <b>vision.md</b></p>
+    <div class="vision-block"><span class="tag"># vision</span>
+
+I think the next genome won't just be evolved — it'll be designed.
+
+I started my career modeling how regulatory genomes work, then spent years
+helping hand-build pieces of synthetic ones: a redesigned tRNA neochromosome,
+debugged synthetic yeast chromosomes, base by base, alongside the Steinmetz,
+Boeke, and Cai labs. That work convinced me of two things — genome design is
+still painfully slow, and most of what makes it slow is now within reach of AI.
+
+Everything I build now is aimed at closing that gap: agentic systems that can
+propose, simulate, and test biological designs fast enough that <em>"build a
+genome from scratch"</em> stops being a moonshot and starts being a roadmap.</div>
+  </section>
+
+  <section id="about">
+    <p class="cmd">cat <b>about.md</b></p>
+    <div class="prose">
+      <p class="lede">I'm a scientist-turned-engineer working at the intersection of synthetic biology, genomics, and agentic AI.</p>
+      <p>After a Ph.D. in systems biology at the University of Washington and five years at EMBL unpacking how genomes are organized and regulated, I moved into industry to build the computational tools that make biological design faster — first statistical and machine-learning models at Inscripta and Ginkgo Bioworks, and now AI agents at Generate Biomedicines. I'm based in Albuquerque, NM, and work remotely with teams in Boston.</p>
+    </div>
+  </section>
+
+  <section id="now">
+    <p class="cmd">tail -f <b>now.log</b></p>
+    <div class="prose">
+      <p class="lede">Principal Scientist, Applied AI @ <a href="https://generatebiomedicines.com" target="_blank" rel="noopener">Generate Biomedicines</a> — Nov 2024–present</p>
+      <p>Shipping agentic products that reshape scientific workflows across the company:</p>
+    </div>
+    <ul class="bullets">
+      <li>Architected and deployed enterprise-scale agentic infrastructure — an agent SDK, an MCP gateway, an evaluation framework, CLI tooling, and a memory system that lets agents iteratively self-improve.</li>
+      <li>Delivered human-in-the-loop agent workflows that automate time-consuming, business-critical work, like turning raw scientific results into on-brand executive presentations.</li>
+      <li>Built an extensible digital-twin simulation framework for parallel analysis of hundreds of thousands of DNA variants — compressing research timelines from weeks to hours and surfacing high-value design candidates.</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <p class="cmd">cat <b>experience.log</b></p>
+    <div class="timeline">
+
+      <div class="job">
+        <div class="job-when">Nov 2024 – present</div>
+        <div>
+          <p class="job-role">Principal Scientist, Applied AI</p>
+          <p class="job-org">Generate Biomedicines · Boston (Remote)</p>
+          <ul>
+            <li>Shipped agentic products that reshape scientific workflows across the company</li>
+            <li>Architected agent SDK, MCP gateway, eval framework, CLI tooling, and a self-improving memory system</li>
+            <li>Built a digital-twin framework analyzing hundreds of thousands of DNA variants in parallel</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-when">Jan 2023 – Jun 2024</div>
+        <div>
+          <p class="job-role">Associate Director, Genetic Design</p>
+          <p class="job-org">Ginkgo Bioworks · Boston (Remote)</p>
+          <ul>
+            <li>Founded a high-performing team and a new business function streamlining DNA asset management enterprise-wide</li>
+            <li>Prototyped AI-assisted knowledge management using RAG and embedding approaches</li>
+            <li>Predicted DNA synthesizability with gradient boosting, random forest, and logistic regression</li>
+            <li>Fine-tuned the HyenaDNA foundation model for regression and classification tasks</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-when">Dec 2020 – Dec 2022</div>
+        <div>
+          <p class="job-role">Staff Scientist, Data Science</p>
+          <p class="job-org">Inscripta · Boulder (Remote)</p>
+          <ul>
+            <li>Enabled 4 customer publications and 3 internal patent applications</li>
+            <li>Led a team designing a biological knowledge graph for target selection</li>
+            <li>Developed statistical methods for interpreting multiplexed CRISPR selection experiments</li>
+            <li>Built an interactive Dash service for deep mutational scanning analysis and visualization</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-when">Jun 2015 – Nov 2020</div>
+        <div>
+          <p class="job-role">Research Scientist</p>
+          <p class="job-org">EMBL · Steinmetz Lab, Heidelberg</p>
+          <ul>
+            <li>Secured €1.4M in funding; published 4 papers including <em>Science</em> and <em>Cell</em>, plus 1 patent</li>
+            <li>Led funding and regulatory approval for a clinical study using wearables to evaluate mitochondrial disorder symptoms outside the clinic</li>
+            <li>Built an end-to-end Snakemake pipeline processing terabytes of third-generation sequencing data</li>
+            <li>Applied gradient boosting to disentangle factors shaping transcript start/end sites in <em>S. cerevisiae</em></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects">
+    <p class="cmd">ls <b>./projects</b></p>
+    <p class="lede">A handful of AI-native apps I've built for myself, end to end — mostly local-first, each with a small embedded AI agent doing real work.</p>
+    <div class="project-grid">
+
+      <div class="card">
+        <p class="card-title"><a href="https://github.com/scalefreegan/lean-into-it" target="_blank" rel="noopener">Lean Into It</a><span class="card-arrow">↗</span></p>
+        <p>Learn mathematical proof and formal verification with Lean 4 — hypotheses appear as cards, and every move writes a real line of Lean.</p>
+        <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Lean 4</span></div>
+      </div>
+
+      <div class="card">
+        <p class="card-title"><a href="https://github.com/scalefreegan/fret-not" target="_blank" rel="noopener">Fret Not</a><span class="card-arrow">↗</span></p>
+        <p>A visual app for learning music theory on piano and guitar — the same note stays in sync across staff, keyboard, fretboard, and tab.</p>
+        <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span></div>
+      </div>
+
+      <div class="card">
+        <p class="card-title"><a href="https://github.com/scalefreegan/lingo-dojo" target="_blank" rel="noopener">Lingo Dojo</a><span class="card-arrow">↗</span></p>
+        <p>Composable prompt packs for spoken language practice, with an in-app voice "dojo master" for live conversation drills.</p>
+        <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Voice AI</span></div>
+      </div>
+
+      <div class="card">
+        <p class="card-title"><a href="https://github.com/scalefreegan/new-eleusis" target="_blank" rel="noopener">New Eleusis</a><span class="card-arrow">↗</span></p>
+        <p>A digital version of the card game that turns the scientific method into play — an AI or human invents a secret rule, the table deduces it.</p>
+        <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Capacitor</span></div>
+      </div>
+
+      <div class="card">
+        <p class="card-title"><a href="https://github.com/scalefreegan/jev-ants" target="_blank" rel="noopener">Jev Ants</a><span class="card-arrow">↗</span></p>
+        <p>~1,000 ants form a typed word or an uploaded image — each ant is its own independent agent deciding how to move.</p>
+        <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Agents</span></div>
+      </div>
+
+      <div class="card">
+        <p class="card-title"><a href="https://github.com/scalefreegan/trail-train" target="_blank" rel="noopener">Basecamp</a><span class="card-arrow">↗</span></p>
+        <p>A local ultra-running dashboard: Strava, Oura, and calendar data plotted against a race plan, with a headless Claude Code coach.</p>
+        <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Claude Code</span></div>
+      </div>
+
+    </div>
+    <p class="more-repos">Also on GitHub — agentic dev tooling: <a href="https://github.com/scalefreegan/agent-skills" target="_blank" rel="noopener">agent-skills</a>, <a href="https://github.com/scalefreegan/agent-learn" target="_blank" rel="noopener">agent-learn</a>, <a href="https://github.com/scalefreegan/agent-trade" target="_blank" rel="noopener">agent-trade</a>, <a href="https://github.com/scalefreegan/hybrid-rag" target="_blank" rel="noopener">pointy-rag</a> →</p>
+  </section>
+
+  <section id="science">
+    <p class="cmd">cat <b>publications.bib</b></p>
+    <div class="stat-row">
+      <div class="stat"><b>13</b><span>publications</span></div>
+      <div class="stat"><b>852</b><span>citations</span></div>
+      <div class="stat"><b>12</b><span>h-index</span></div>
+    </div>
+
+    <ul class="pub-list">
+      <li>
+        <p class="pub-title"><a href="https://www.science.org/doi/10.1126/science.abg0162" target="_blank" rel="noopener">Transcriptional neighborhoods regulate transcript isoform lengths and expression levels</a></p>
+        <p class="pub-meta">Brooks*, Hughes*, et al. · Science · 2022</p>
+      </li>
+      <li>
+        <p class="pub-title"><a href="https://www.cell.com/cell/fulltext/S0092-8674(23)01130-3" target="_blank" rel="noopener">Design, Construction, and Functional Characterization of a tRNA Neochromosome in Yeast</a></p>
+        <p class="pub-meta">Schindler, Walker, Jiang, Brooks, et al. · Cell · 2023</p>
+      </li>
+      <li>
+        <p class="pub-title"><a href="https://www.cell.com/cell/fulltext/S0092-8674(23)01079-6" target="_blank" rel="noopener">Debugging and consolidating multiple synthetic chromosomes reveals combinatorial genetic interactions</a></p>
+        <p class="pub-meta">Zhao, Coelho, Hughes, Brooks, et al. · Cell · 2023</p>
+      </li>
+      <li>
+        <p class="pub-title"><a href="https://www.nature.com/articles/s41467-023-35940-3" target="_blank" rel="noopener">Deep mutational scanning of essential bacterial proteins can guide antibiotic development</a></p>
+        <p class="pub-meta">Dewachter, Brooks, et al. · Nature Communications · 2023</p>
+      </li>
+      <li>
+        <p class="pub-title"><a href="https://doi.org/10.15252/msb.20145160" target="_blank" rel="noopener">A system-level model for the microbial regulatory genome</a></p>
+        <p class="pub-meta">Brooks*, Reiss*, et al. · Molecular Systems Biology · 2014</p>
+      </li>
+    </ul>
+    <p class="more-repos" style="margin-top:18px;">Full list on <a href="https://scholar.google.com/citations?user=HGq2_yEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> →</p>
+
+    <div class="patents">
+      <h3>Patents</h3>
+      <ul>
+        <li>Methods for isolating and/or obtaining captured polynucleotide fragments <span>US App. 18/501,530 · 2024</span></li>
+        <li>Genome-wide rationally-designed mutations leading to enhanced cellobiohydrolase I production in S. cerevisiae <span>WO2023028521A1 · 2023</span></li>
+        <li>System and method for gene editing cassette design <span>US20220246235A1 · 2022</span></li>
+      </ul>
+    </div>
+
+    <div class="patents">
+      <h3>Code behind the papers</h3>
+      <ul>
+        <li><a href="https://github.com/scalefreegan/scramble" target="_blank" rel="noopener">scramble</a> — analysis scripts for the <em>Science</em> paper on transcriptional neighborhoods</li>
+      </ul>
+    </div>
+
+    <div class="patents">
+      <h3>Education</h3>
+      <ul>
+        <li>Ph.D., Molecular and Cellular Biology — University of Washington <span>2008–2014</span></li>
+        <li>B.S. Biochemistry / B.A. Political Science — University of New Mexico <span>2002–2007</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="cmd">cat <b>contact.txt</b></p>
+    <p class="lede">Always glad to talk agentic AI, genome engineering, or where they're headed together.</p>
+    <div class="contact-row">
+      <a href="mailto:aaron.neil.brooks@gmail.com">Email</a>
+      <a href="https://github.com/scalefreegan" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/aaron-n-brooks/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=HGq2_yEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="assets/resume.pdf" target="_blank" rel="noopener">Résumé</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Built with React, canvas, and an unreasonable number of nucleotide puns. © <span id="year"></span> Aaron Brooks.</p>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script type="module" src="assets/js/dna-hero.js"></script>
 </body>
 </html>
