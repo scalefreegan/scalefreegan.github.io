@@ -76,6 +76,24 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .nav-links a { color: var(--text-dim); }
 .nav-links a:hover { color: var(--green); text-decoration: none; }
 
+/* phones: name on its own line, links spread across one row beneath it */
+.nav-links .short { display: none; }
+@media (max-width: 639px) {
+  .nav-inner { flex-direction: column; align-items: stretch; gap: 6px; padding: 10px 24px 9px; }
+  .nav-links {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow-x: auto; /* only matters on very narrow screens */
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links .long { display: none; }
+  .nav-links .short { display: inline; }
+}
+
 /* ---------- hero ---------- */
 .hero {
   position: relative;
